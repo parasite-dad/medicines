@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework',
+    # 'rest_framework',
     
 ]
 
@@ -133,3 +133,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #     "sesame.backends.ModelBackend",
 # ]
 # SESAME_MAX_AGE = 30
+
+LOGIN_REDIRECT_URL = "/"
+

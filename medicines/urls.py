@@ -21,7 +21,10 @@ urlpatterns = [
     path("showprofile/<str:name>", views.profile, name="showprofile"),
     #path("showprofile", views.showprofile, name="showprofile"),
     path("drugs_content", views.drugs_content, name="drugs_content"),
-    path("accounts/login/", auth_views.LoginView.as_view(template_name='medicines/login.html',next_page="/", authentication_form=CustomAuthenticationForm), name="accounts_login"),
+    #path("accounts/login/", auth_views.LoginView.as_view(template_name='medicines/login.html',next_page="/", authentication_form=CustomAuthenticationForm), name="accounts_login"),
+
+    path("accounts/login/", auth_views.LoginView.as_view(template_name='medicines/login.html',authentication_form=CustomAuthenticationForm), name="accounts_login"),
+
     #path("accounts/logout/", auth_views.LogoutView.as_view(next_page="/"), name="accounts_logout"),
     path("accounts/logout/", auth_views.logout_then_login,{'login_url':'/accounts/login/'} , name="accounts_logout"),
     # path("sesame/login/", LoginView.as_view(), name="sesame-login"),

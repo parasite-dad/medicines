@@ -8,3 +8,5 @@ medicines/__pycache__/
 medicines/node_modules/
 !/medicines
 .gitignore
+makefile
+medicines.sh

@@ -15,7 +15,7 @@ from .forms import CustomUserCreationForm
 from django.contrib.auth.decorators import user_passes_test
 from django.contrib.auth.decorators import login_required
 import json
-from rest_framework.decorators import api_view
+# from rest_framework.decorators import api_view
 from django.http import JsonResponse
 from django.core.paginator import Paginator
 import pandas as pd
@@ -365,7 +365,7 @@ def drugs_content(drugurl):
     #print(request.POST.get('drugname'))
     #with open(drugurl) as fp1:
     #BELOW IS HARD CODE HTML , CORRECT IS USING ABOVE TO GET THE CONTENT FROM CORRESPONDING WEBSITE
-    with open("../capstone/drugshtml/pantoprazole.html") as fp1:
+    with open("../medicines/drugshtml/pantoprazole.html") as fp1:
         soup = BeautifulSoup(fp1,'html.parser')
     firstuses=soup.find(id="uses")
     #print(firstuses)
@@ -398,7 +398,7 @@ def drugs_content(drugurl):
 
 #READ THE HTML FILE AND THEN CONVERT TO DATAFRAME AND THEN STORE TO DATABASE DIRECTLY.
 def make_drug_db():
-    with open("../capstone/drugshtml/drugs.html") as fp:
+    with open("../medicines/drugshtml/drugs.html") as fp:
         soup = BeautifulSoup(fp,'html.parser')
     litag=soup.li.a
     litag1=soup.find_all('li')
