@@ -1,0 +1,98 @@
+{% extends "medicines/layout.html" %}
+
+{% block body %}
+
+<h2 class="text-white">Login</h2>
+
+
+<div class="container-fluid">
+    <div class="row align-items-center mx-auto">
+        <div class="col-3 bg-primary">
+        </div>
+        <div class="col-6 bg-light justify-content-center  mx-auto">
+            <!-- <form action="{% url 'login' %}" method="post">
+                {% csrf_token %}
+                <br>
+                <div class="form-group">
+                    <input autofocus class="form-control" type="text" name="username" placeholder="Username">
+                </div>
+                <br>
+                <div class="form-group">
+                    <input class="form-control" type="password" name="password" placeholder="Password">
+                </div>
+                <br>
+                <div class="text-center">
+                    <input class="btn btn-primary text-center" type="submit" value="Login">
+                </div>
+                <br>
+            </form> -->
+            <!-- <div class="d-flex justify-content-center"> -->
+            <!-- <div class="col-6 bg-light text-center"> -->
+            <div class="row align-items-center mx-auto">
+                <div class="col-6 justify-content-center  mx-auto">
+                    <form method="post" action="{% url 'login' %}">
+                        {% csrf_token %}
+                        <table>
+                            <!-- <tr>
+                        <td>{{ form.username.label_tag }}</td>
+                        <td>{{ form.username }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ form.password.label_tag }}</td>
+                        <td>{{ form.password }}</td>
+                    </tr> -->
+                            <tr>
+                                <td>
+                                    <h3 class="text-center">Medicines Tracking Login</h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-group">
+                                        <span
+                                            class="input-group-text">{{form.username.label_tag}}</span>{{form.username}}
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>{{form.username.help_text}}</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="input-group">
+                                        <span
+                                            class="input-group-text">{{form.password.label_tag}}</span>{{form.password}}
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>{{form.password.help_text}}</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center"><input type="submit" value="login"></td>
+                                <td class="text-center"><input type="hidden" name="next" value="{{ next }}"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    {% if message %}
+                                    <div>{{ message }}</div>
+                                    {% endif %}
+                                    {% if form.errors %}
+                                    <p>Your username and password didn't match. Please try again.</p>
+                                    {% endif %}
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-3 bg-primary">
+        </div>
+    </div>
+</div>
+<div class="text-white text-center">
+    Don't have an account? <a class="text-white" href="{% url 'register' %}">Register here.</a>
+</div>
+
+{% endblock %}
