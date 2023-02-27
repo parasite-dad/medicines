@@ -7,3 +7,5 @@ pyvenv.cfg
 medicines/__pycache__/
 medicines/node_modules/
 !/medicines
+__pycache__
+.gitignore
