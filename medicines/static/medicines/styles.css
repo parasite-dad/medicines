@@ -1,0 +1,21 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+  }
+.headpart {
+
+text-align: left;
+}
+.tailpart {
+
+text-align: right;
+}
+
+textarea {
+    width: 100%;
+
+    display: block;
+   }
+

@@ -1,0 +1,17 @@
+{% extends "medicines/layout.html" %}
+{% load static %}
+
+{% block body %}
+<div id="main">
+    {% if user.is_authenticated %}
+    <input type="hidden" id="username1" value="{{user.username}}"></input>
+    {% else %}
+    <input type="hidden" id="username1" value="none"></input>
+    {% endif %}
+    <div id="app"></div>
+</div>
+
+<script src="{% static 'medicines/main.js' %}"></script>
+{% endblock %}
+{% block script %}
+{% endblock %}
