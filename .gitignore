@@ -6,3 +6,4 @@ share/
 pyvenv.cfg
 medicines/__pycache__/
 medicines/node_modules/
+!/medicines
