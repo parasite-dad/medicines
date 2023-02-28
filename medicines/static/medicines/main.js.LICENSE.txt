@@ -1,87 +1,40 @@
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/**
+ * @license React
+ * react-dom.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
-/*!*******************************!*\
-  !*** ./src/components/App.js ***!
-  \*******************************/
+/**
+ * @license React
+ * react.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
-/*!*************************************!*\
-  !*** ./node_modules/react/index.js ***!
-  \*************************************/
+/**
+ * @license React
+ * scheduler.production.min.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
-/*!*************************************!*\
-  !*** ./src/components/Bodyindex.js ***!
-  \*************************************/
-
-/*!**************************************!*\
-  !*** ./src/components/Drugdetail.js ***!
-  \**************************************/
-
-/*!***************************************!*\
-  !*** ./node_modules/history/index.js ***!
-  \***************************************/
-
-/*!***************************************!*\
-  !*** ./src/components/Consulation.js ***!
-  \***************************************/
-
-/*!*****************************************!*\
-  !*** ./node_modules/react-dom/index.js ***!
-  \*****************************************/
-
-/*!*****************************************!*\
-  !*** ./node_modules/scheduler/index.js ***!
-  \*****************************************/
-
-/*!******************************************!*\
-  !*** ./node_modules/react-dom/client.js ***!
-  \******************************************/
-
-/*!********************************************!*\
-  !*** ./node_modules/react-router/index.js ***!
-  \********************************************/
-
-/*!********************************************!*\
-  !*** ./src/components/Bodyindexhistory.js ***!
-  \********************************************/
-
-/*!**********************************************!*\
-  !*** ./src/components/Consultationdetail.js ***!
-  \**********************************************/
-
-/*!***********************************************!*\
-  !*** ./src/components/Consultationhistory.js ***!
-  \***********************************************/
-
-/*!************************************************!*\
-  !*** ./node_modules/react-router-dom/index.js ***!
-  \************************************************/
-
-/*!*************************************************!*\
-  !*** ./src/components/Adminbodyindexhistory.js ***!
-  \*************************************************/
-
-/*!****************************************************!*\
-  !*** ./src/components/Patientmedicinestracking.js ***!
-  \****************************************************/
-
-/*!*****************************************************!*\
-  !*** ./node_modules/react/cjs/react.development.js ***!
-  \*****************************************************/
-
-/*!************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
-  \************************************************************/
-
-/*!************************************************************!*\
-  !*** ./node_modules/react-paginate/dist/react-paginate.js ***!
-  \************************************************************/
-
-/*!*************************************************************!*\
-  !*** ./node_modules/react-dom/cjs/react-dom.development.js ***!
-  \*************************************************************/
-
-/*!*************************************************************!*\
-  !*** ./node_modules/scheduler/cjs/scheduler.development.js ***!
-  \*************************************************************/
+/**
+ * React Router v6.3.0
+ *
+ * Copyright (c) Remix Software Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.md file in the root directory of this source tree.
+ *
+ * @license MIT
+ */
