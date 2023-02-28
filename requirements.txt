@@ -29,3 +29,4 @@ soupsieve==2.3.2.post1
 sqlparse==0.4.2
 websockets==10.3
 gunicorn
+whitenoise
