@@ -84,7 +84,16 @@ This web application is different from previous project in the folllowing
 
 ---
 ## How to run and interface
-- gunicorn capstone.wsgi
+1. git clone https://github.com/parasite-dad/medicines.git
+2. cd medicines
+3. python -m venv .
+4. source bin/activate
+5. pip install -r requirements.txt
+6. python manage.py shell
+7. from django.core.management.utils import get_random_secret_key
+8. print(get_random_secret_key()) and then crtl d exit to shell
+9. touch .env and paste the random key SECRET_KEY = "your random key"
+10. gunicorn capstone.wsgi
 
 - for both admin or patient, if it is not login before, it will direct to login page.
 depends on the admin or patience login and will redirect to admin page or patient page.
