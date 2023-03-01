@@ -1,4 +1,6 @@
 # Medicines Tracking
+## Demo
+https://medicines.onrender.com
 
 ## Background
  In Hong Kong, there is no system to know our previous medical consultation history centrally. Each clinic or data cannot share easily with each other as most of time clinic still use paper record card to write patient consultation record. If a patient want to go to see new doctor, the new doctor don't have previous patient history health record. Those data in fact are belong to patient and it is personal private data. Patient cannot easily know previous consultation even it is in hosptial. With this web application, it is helpful for patient to view previous consultation, body health index history, previous drugs taken and can sent their body health index to health care centre in need. For the clinic or hospital points of views, they can remind patient to take drugs on time, monitor their body health index easily. This app is for both clinic doctor and patient to communicate easily and store patient whole life record.
@@ -89,11 +91,7 @@ This web application is different from previous project in the folllowing
 3. python -m venv .
 4. source bin/activate
 5. pip install -r requirements.txt
-6. python manage.py shell
-7. from django.core.management.utils import get_random_secret_key
-8. print(get_random_secret_key()) and then crtl d exit to shell
-9. touch .env and paste the random key SECRET_KEY = "your random key"
-10. gunicorn capstone.wsgi
+6. gunicorn capstone.wsgi
 
 - for both admin or patient, if it is not login before, it will direct to login page.
 depends on the admin or patience login and will redirect to admin page or patient page.
