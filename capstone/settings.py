@@ -20,14 +20,20 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-c1$=cmtxb6-5kno$m%=ruop53uw&glmioju=-=i&cq0a8fa8_i'
+#SECRET_KEY =
+import os
+from dotenv import load_dotenv, find_dotenv
+load_dotenv(find_dotenv())
+SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 #DEBUG = True
 DEBUG = False
 
+#original is empty
+# ALLOWED_HOSTS = []
+#now need to add these side to deploy for security reason
 ALLOWED_HOSTS = ['medicines.onrender.com','127.0.0.1']
-
 
 # Application definition
 
@@ -38,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    # add this for deploy static file for gunicorn
     "whitenoise.runserver_nostatic",
     'django.contrib.staticfiles',
     # 'rest_framework',
@@ -46,6 +53,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    # add this for deploy static file for gunicorn
     "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -137,6 +145,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # ]
 # SESAME_MAX_AGE = 30
 
+#see urls.py for loginview nextpage which is new function for django 4.0
+# for django 3.0 , use below instead for next page
 LOGIN_REDIRECT_URL = "/"
 
 #https://whitenoise.evans.io/en/stable/django.html

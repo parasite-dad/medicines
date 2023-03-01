@@ -10,3 +10,4 @@ medicines/node_modules/
 .gitignore
 makefile
 medicines.sh
+.env

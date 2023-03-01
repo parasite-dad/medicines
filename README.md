@@ -5,7 +5,7 @@
 
 Also, patient ususally did not know the drugs usage exactly and it is easily to have more information of this web app the link and usage of drug. Also, it can be translated to Chinese for elderly who dont know english.
 
-This application is very basic one with core function but the idea can be easily extended to many differnt ideas. We can connect body index record using smart watch, some smart health device to record automatically daily health and sent to health care or Doctor easily. On the Doctor or clinic points of view, they can know the patient health easily day by day. and they can have centralized database to have all patient record easily finding some discease trend. For the health care company or durg company, they can have these data and easily promote their health products to corresponding patients. Furthermore, we can added some simple input device to capture patience taking drugs time. Let's say a electronic device button pressed after drug taking.
+This application is very basic one with core function but the idea can be easily extended to many differnt ideas. We can connect body index record using smart watch, some smart health device to record automatically daily health and sent to healthcare or Doctor easily. On the Doctor or clinic points of view, they can know the patient health easily day by day. and they can have centralized database to have all patient record easily finding some discease trend. For the health care company or durg company, they can have these data and easily promote their health products to corresponding patients. Furthermore, we can added some simple input device to capture patience taking drugs time. Let's say a electronic device button pressed after drug taking.
 
 ---
 ## Distinctiveness and Complexity
@@ -22,14 +22,8 @@ This web application is different from previous project in the folllowing
 ## Project File Structure
 - capstone
     - capstone (main project)
-    - bin (virtual env)
-    - include (virtual env)
-    - lib (virtual env)
-    - lib64 (virtual env)
     - medicines (main app)
-        - _pycache_ (virtual env)
         - migrations (django)
-        - node_modules (virtual env package nodejs)
         - src
             - index.js (main container of reactjs)
             - components (different component)
@@ -64,12 +58,13 @@ This web application is different from previous project in the folllowing
         - urls.py (django urls)
         - views.py (django views)
         - webpack.config.js (webpack file makeing all js component to single main.js)
-        - share/python-wheels (virtual env)
-        - db.sqlite3 (sqlite database)
-        - manage.py (django)
-        - pyvenv.cfg (virtual evn)
-        - requirements.txt (pip dependanies)
-        - README.md
+    - drugshtml (drusg.com html medicines name)
+    - staticfiles (using whitenoise)
+    - db.sqlite3 (sqlite database)
+    - manage.py (django)
+    - requirements.txt (pip dependanies)
+    - README.md
+        
 
 ---
 ## Functions
@@ -89,10 +84,7 @@ This web application is different from previous project in the folllowing
 
 ---
 ## How to run and interface
-- under capstone/capstone (for django backend)
-    - python manage.py runserver
-- under capstone/capstone/medicines
-    - npm run dev (for reacjs webpack frontend)
+- gunicorn capstone.wsgi
 
 - for both admin or patient, if it is not login before, it will direct to login page.
 depends on the admin or patience login and will redirect to admin page or patient page.
@@ -163,7 +155,5 @@ depends on the admin or patience login and will redirect to admin page or patien
 7. Webpack
 8. Reuse of components of Reactjs 
 9. Pageination using react
-
- # **Thanks for all CS50 Professsor and teachers setting up this course**
 
 
